@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Product Landing Page</title>
+</head>
+
+<body>
+
+
+  <header id="header">
+    <a id="logo" href="#"><img id="header-img" src="https://www.omgubuntu.co.uk/wp-content/uploads/2015/05/gjBh4cw2-300x300.png"
+        alt="vscode icon">vscode</a>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#main">Home</a>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#section_video">Product</a>
+      <a class="nav-link" href="#extensions">Extensions</a>
+      <a class="nav-link" href="#form">Contact</a>
+    </nav>
+
+    <i id="menu" class="material-icons  toggle-menu">menu</i>
+  </header>
+
+
+  <main id="main">
+
+    <section id="cover">
+      <h2>Best Code Editor</h2>
+      <form action="https://code.visualstudio.com/" target="_blank">
+        <button>Download <i class="material-icons">
+            vertical_align_bottom
+          </i></button>
+      </form>
+      <h3>Visual Studio Code</h3>
+    </section>
+
+
+    <section id="introduction">
+
+      <i id="a" class="material-icons">
+        code
+      </i>
+      <div id="b">
+        <h2>IntelliSense</h2>
+        <p>
+          Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart
+          completions
+          based on
+          variable types, function definitions, and imported modules.
+        </p>
+      </div>
+
+      <i id="c" class="material-icons">
+        bug_report
+      </i>
+      <div id="d">
+        <h2>Debug</h2>
+        <p>Debug code right from the editor. Launch or attach to your running apps and debug with break points,
+          call
+          stacks, and an interactive console.</p>
+      </div>
+
+      <i id="e" class="material-icons">
+        extension
+      </i>
+      <div id="f">
+        <h2>Extensions</h2>
+        <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to
+          additional services. Extensions run in separate processes, ensuring they won't slow down your editor.</p>
+      </div>
+    </section>
+
+
+    <section id="section_video">
+      <iframe id="video" width="675" height="380" src="https://www.youtube.com/embed/4q1tD39Mk_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+
+
+    <section id="extensions">
+      <div>
+        <h3>One Dark Pro</h3>
+        <img src="https://zhuangtongfa.gallerycdn.vsassets.io/extensions/zhuangtongfa/material-theme/2.17.7/1540913159609/Microsoft.VisualStudio.Services.Icons.Default"
+          alt="one dark pro">
+        <h2>FREE</h2>
+        <p>Atom's iconic One Dark theme, and one of the most downloaded themes for VS Code!</p>
+        <a href="https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme" target="_blank">Select</a>
+      </div>
+      <div>
+        <h3>ESLint</h3>
+        <img src="https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/1.7.0/1541066284937/Microsoft.VisualStudio.Services.Icons.Default"
+          alt="one dark pro">
+        <h2>FREE</h2>
+        <p>Integrates ESLint JavaScript into VS Code. You will use this extension every single day!</p>
+        <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">Select</a>
+      </div>
+      <div>
+        <h3>Debugger for Chrome</h3>
+        <img src="https://msjsdiag.gallerycdn.vsassets.io/extensions/msjsdiag/debugger-for-chrome/4.11.1/1542259489144/Microsoft.VisualStudio.Services.Icons.Default"
+          alt="one dark pro">
+        <h2>FREE</h2>
+        <p>Debug your JavaScript code in the Chrome browser, or any other target that supports the Chrome Debugger
+          protocol.</p>
+        <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank">Select</a>
+      </div>
+
+    </section>
+
+
+    <section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">
+          Subscribe to receive free email updates
+        </label>
+        <input id="email" type="email" placeholder="example@email.com" name="email">
+        <input id="submit" type="submit"></input>
+      </form>
+    </section>
+
+    <p id="download_link">Go to <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+      homepage to download
+      this awesome FREE
+      code
+      editor.</p>
+  </main>
+
+
+  <footer>
+    <p>
+      Coded by
+      <a href="https://codepen.io/artur_sep/" class="text-success" target="_blank">Artur Sęp</a>
+    </p>
+  </footer>
+
+
+
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  <script>
+    let nav = document.getElementById('nav-bar');
+    let menu = document.getElementById('menu');
+    menu.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
