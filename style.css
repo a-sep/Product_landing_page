@@ -343,4 +343,8 @@ footer a:hover {
         grid-auto-rows: minmax(50px, auto);
     }
 
+    #section_video{
+        padding: 0;
+    }
+
 }
