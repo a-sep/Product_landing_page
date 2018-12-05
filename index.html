@@ -147,9 +147,14 @@
   <script>
     let nav = document.getElementById('nav-bar');
     let menu = document.getElementById('menu');
-    menu.addEventListener('click', function () {
+    menu.addEventListener('click', () => {
       nav.classList.toggle('active');
     });
+
+    nav.addEventListener('click', () => {
+      if (nav.classList.contains('active')) nav.classList.toggle('active');
+    });
+
   </script>
 </body>
 
