@@ -169,6 +169,16 @@ border: red dotted 2px;
 #download_link{
     margin: 3rem 1rem;
 }
+#download_link a{
+    text-decoration: none;
+    color: #9593B7;
+    padding:  0.5em;
+    background-color: #373277;
+}
+
+#download_link a:hover{
+    color: #fefefe;
+}
 
 
 /* introduction ------------------- */
